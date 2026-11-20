@@ -1,0 +1,9 @@
+[project]
+name = "log-analyzer"
+version = "1.0.0"
+description = "Streaming CLI analyzer for large event logs"
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
