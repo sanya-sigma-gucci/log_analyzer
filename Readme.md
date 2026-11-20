@@ -179,20 +179,20 @@ python -m log_analyzer `
 #### Пример 3 — top-5 кодов ошибок за весь журнал, отчёт в CSV
 
 ```bat
-python -m log_analyzer ^
-    --input sample_data\logs_events_sample.log ^
-    --level ERROR ^
-    --top 5 ^
-    --format csv ^
+python -m log_analyzer `
+    --input sample_data\logs_events_sample.log `
+    --level ERROR `
+    --top 5 `
+    --format csv `
     --output report.csv
 ```
 
 #### Пример 4 — проверка границ интервала (`from == to` → пустая выборка)
 
 ```bat
-python -m log_analyzer ^
-    --input sample_data\logs_events_sample.log ^
-    --from 2026-09-01T06:00:00Z ^
+python -m log_analyzer `
+    --input sample_data\logs_events_sample.log `
+    --from 2026-09-01T06:00:00Z `
     --to 2026-09-01T06:00:00Z
 ```
 
@@ -211,13 +211,13 @@ run_tests.bat
 Что делает скрипт:
 
 ```bat
-python -m pytest tests ^
-    --cov=log_analyzer ^
-    --cov-config=.coveragerc ^
-    --cov-report=html:htmlcov ^
-    --cov-report=term-missing ^
-    --cov-fail-under=80 ^
-    --html=test-report.html ^
+python -m pytest tests `
+    --cov=log_analyzer `
+    --cov-config=.coveragerc `
+    --cov-report=html:htmlcov `
+    --cov-report=term-missing `
+    --cov-fail-under=80 `
+    --html=test-report.html `
     --self-contained-html
 ```
 
