@@ -124,10 +124,9 @@ log_analyzer_project/
 
 ## 4. Развёртывание
 
-Требуется **Python 3.9+** на Windows 10 / 11. **WSL не нужен.**
+Требуется **Python 3.9+** на Windows 10 / 11.
 
 ```bat
-cd log_analyzer_project
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
