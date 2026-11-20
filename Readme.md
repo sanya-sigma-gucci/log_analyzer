@@ -165,14 +165,14 @@ python -m log_analyzer --input sample_data\logs_events_sample.log
 #### Пример 2 — ERROR-события `payment-worker` за первые 12 часов, отчёт в JSON
 
 ```bat
-python -m log_analyzer ^
-    --input sample_data\logs_events_sample.log ^
-    --from 2026-09-01T00:00:00Z ^
-    --to 2026-09-01T12:00:00Z ^
-    --level ERROR ^
-    --source payment-worker ^
-    --top 3 ^
-    --format json ^
+python -m log_analyzer `
+    --input sample_data\logs_events_sample.log `
+    --from 2026-09-01T00:00:00Z `
+    --to 2026-09-01T12:00:00Z `
+    --level ERROR `
+    --source payment-worker `
+    --top 3 `
+    --format json `
     --output report.json
 ```
 
